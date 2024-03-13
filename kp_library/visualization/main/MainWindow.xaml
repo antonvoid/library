@@ -1,0 +1,38 @@
+﻿<Window x:Class="Main_kp.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Main_kp"
+        mc:Ignorable="d"
+        xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+        Title="MainWindow" Height="800" Width="1000">
+    <Grid Background="Gray">
+        <Border MinWidth="400" Height="410" Margin="-5,14,35,0" Background="White" VerticalAlignment="Center" Padding="30" MaxWidth="550" CornerRadius="20">
+            <Border.Effect>
+                <DropShadowEffect BlurRadius="30" Color="Gray" ShadowDepth="0" />
+            </Border.Effect>
+            <StackPanel>
+                <Grid Margin="0 0 0 20" Width="494" RenderTransformOrigin="0.117,0.531" Height="51">
+                    <Button x:Name="buttonOff" Width="56" Height="51" HorizontalAlignment="Left" Margin="10,0,0,0" VerticalAlignment="Center" RenderTransformOrigin="0.5,0.5" Click="buttonOff_Click">
+                        <Button.Template>
+                            <ControlTemplate  TargetType="Button">
+                                <Grid>
+                                    <Ellipse Fill="White"></Ellipse>
+                                    <Image Source="C:\Users\petra\Documents\Stuff\Учёба\БД\GUI\Main kp\pics\power_button.jpg"></Image>
+                                </Grid>
+                            </ControlTemplate>
+                        </Button.Template>
+                    </Button>
+                </Grid>
+                <Grid Margin="0 0 0 80" Width="201" RenderTransformOrigin="0.117,0.531" Height="95">
+                    <Image Source="C:\Users\petra\Documents\Stuff\Учёба\БД\GUI\Main kp\pics\book.gif"></Image>
+                </Grid>
+                <Button x:Name="buttonTo_Search" Content="Поиск" RenderTransformOrigin="0.499,0.507" Click="buttonTo_Search_Click"/>
+                <Button x:Name="buttonTo_registration" Content="Регистрация" Margin="0 5" Click="buttonTo_registration_Click" />
+                <Button x:Name="buttonTo_Issuance" Content="Выдача" Click="buttonTo_Issuance_Click"/>
+            </StackPanel>
+        </Border>
+    </Grid>
+
+</Window>
